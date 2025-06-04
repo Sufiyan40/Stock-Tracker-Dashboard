@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock Tracker Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header-section">
+    <h1>Stock Tracker Dashboard</h1>
+  </div>
+
+  <div class="controls-container">
+    <div class="control-box">
+      <select id="stockSelector">
+        <option value="AAPL">AAPL</option>
+        <option value="GOOGL">GOOGL</option>
+        <option value="MSFT">MSFT</option>
+        <option value="AMZN">AMZN</option>
+        <option value="TSLA">TSLA</option>
+        <option value="NFLX">NFLX</option>
+        <option value="WDA">WDA</option>
+        <option value="BABA">BABA</option>
+        <option value="INTC">INTC</option>
+      </select>
+      <button onclick="loadStock()">Load Stock</button>
+    </div>
+    <div class="control-box">
+      <input type="text" id="stockSearch" placeholder="Search stock..." />
+      <button onclick="searchStock()">Search</button>
+    </div>
+  </div>
+
+  <div class="info-box" id="stockInfo">Stock info will appear here</div>
+
+  <div class="info-box">
+    <canvas id="stockChart"></canvas>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

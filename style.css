@@ -1,0 +1,36 @@
+body {
+      font-family: sans-serif;
+      padding: 10px;
+      background: #f7f7f7;
+    }
+    .header-section {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+    .controls-container {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .control-box input,
+    .control-box select {
+      padding: 8px;
+    }
+    .control-box button {
+      padding: 8px 15px;
+      background-color: green;
+      color: white;
+      border: none;
+    }
+    .info-box {
+      margin: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    canvas {
+      max-width: 100%;
+    }
